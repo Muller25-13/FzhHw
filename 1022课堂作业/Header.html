@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img {margin:0;padding:0;border:0;list-style: none;}
+body{font-family:"微软雅黑",Arial, Helvetica, sans-serif; font-size:14px;}
+.videobox{
+	width:100%;
+	height:680px;
+	overflow: hidden;
+	position: relative;
+}
+a{color:#999;text-decoration: none;}
+a:hover{color:#fff;}
+input,textarea{outline: none;}
+
+.videobox img{
+	width:100%;
+	/* min-width: 1280px; */
+	/* position: absolute; */
+	top:50%;
+	left:50%;
+	/* transform:translate(-50%,-50%); */
+}
+
+.videobox header{
+	width:100%;
+	height:40px;
+	background: #333;
+	z-index: 999;
+	position: absolute;
+}
+
+.videobox header .con{
+	width:1030px;
+	height:40px;
+	margin:0 auto;
+}
+
+.videobox header .right{
+	margin-top: 10px;
+	float: right;
+	font-family: "freshskin";
+}
+.videobox header .right a{margin-right: 10px;}
+
+.videobox header .left{
+	width:75px;
+	height:20px;
+	background:url(images/Logo.png) 0 0 no-repeat;
+	margin-top: 10px;
+	float: left;
+}
+
+
+
+
+.videobox nav{
+	width:100%;
+	height:90px;
+	background: rgba(0,0,0,0.2);
+	z-index: 1000;
+	position: absolute;
+	top:40px;
+	border-bottom: 1px solid #fff;
+}
+.videobox nav ul{
+	width:1030px;
+	height:90px;
+	margin:0 auto;
+	position: relative;
+}
+.videobox nav ul li{
+	float: left;
+	margin-right: 19%;
+}
+.videobox nav ul .left:hover aside{display: block;}
+.videobox nav ul .left a{
+	display: block;
+	height:90px;
+	line-height: 90px;
+	font-size: 20px;
+	color:#fff;
+}
+.videobox nav ul .left a img{vertical-align: middle;}
+.videobox nav ul .left a span{margin:0 10px;}
+
+
+.videobox aside{
+	display: none;
+	width:380px;
+	height:560px;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	left:0;
+	top:90px;
+	z-index: 1500;
+	color:#fff;
+}
+
+
+.videobox aside span{
+	width:20px;
+	height:14px;
+	background:url(../images/liebiao.png) 0 0 no-repeat;
+	position: absolute;
+	left:50px;
+	top:0;
+}
+.videobox aside ol{
+	width:155px;
+	float: left;
+}
+.videobox aside ol li{
+	width:155px;
+	height:25px;
+	line-height: 25px;
+	cursor: pointer;
+	font-family: "宋体";
+}
+.videobox aside ol li.con{
+	font-size: 16px;
+	text-indent: 0;
+	font-family: "微软雅黑";
+	padding: 10px 0;
+}
+.videobox aside ol li:hover{color:#fff;}
+.videobox aside .zuo{margin:35px 0 0 68px;}
+.videobox aside .you{margin-top: 35px;}
+.videobox aside img{margin:10px 0 0 13px;}
+.videobox nav ul .center{margin-top: 32px;}
+.videobox nav ul .center input{
+	width:240px;
+	height:30px;
+	border:1px solid #fff;
+	border-radius: 15px; 
+	color:#fff;
+	line-height: 32px;
+	background: rgba(0,0,0,0);
+	padding-left: 30px;
+	box-sizing:border-box;
+	background:url(../images/search.png) no-repeat 3px 3px;
+	outline: none;去掉蓝边
+}
+.videobox nav ul .right{
+	margin-top: 32px;
+	width:280px;
+	height:32px;
+	margin-right:0;
+	font-family: "freshskin";
+	text-align: center;
+	line-height: 32px;
+	font-size: 16px;
+} 
+.videobox nav ul .right a{
+	display: inline-block;
+	width:32px;
+	height:32px;
+	color:#fff;
+	box-shadow: 0 0 0 1px #fff inset;
+	transition:box-shadow 0.3s ease 0s; 
+	border-radius: 16px; 
+    margin-left: 30px;
+    background-size: 15px;
+}
+.videobox nav ul .right a:hover{
+	box-shadow: 0 0 0 16px #fff inset; 
+	color:#C1DCC5;
+}
+
+    </style>
+</head>
+<body>
+        <div class="videobox">
+                <header>
+                    <div class="con">
+                        <section class="left"></section>
+                        <section class="right">
+                            <a href="#">登录</a>
+                            <a href="#">注册</a>
+                        </section>
+                    </div>
+                </header>
+                <nav>
+                    <ul>
+                        <li class="left">
+                            <a class="one" href="#">
+                                <img src="images/sanxian.png" alt="">
+                                <span>选项</span>
+                                <img src="images/sanjiao.png" alt="">
+                            </a>
+                            <aside>
+                                <span></span>
+                                <ol class="zuo">
+                                    <li class="con">三星</li>
+                                    <li>>三星GALAXY Note9</li>
+                                    <li>>三星GALAXY A9 Star</li>
+                                    <li>>三星GALAXY S9</li>
+                                    <li>>三星GALAXY S8</li>
+                                    <li class="con">华为</li>
+                                    <li>>华为Mate 20</li>
+                                    <li>>华为P20 Pro</li>
+                                    <li>>华为nova 3</li>
+                                    
+                                   					
+                                </ol>
+                                <ol class="you">
+                                    <li class="con">苹果</li>
+                                    <li>>iphone6</li>
+                                    <li>>iphone7</li>
+                                    <li>>iphone8</li>
+                                    <li>>iphoneX</li>
+                                    <li class="con">热门搜索</li>
+                                    <li>>iphoneX</li>
+                                    <li>>iphoneXS</li>
+                                    <li>>三星GALAXY S9</li>
+                                    <li>>华为 Mate10</li>						
+                                </ol>
+                                <img src="./images/Guanggao.jfif" alt="" width="350" height="200">
+                            </aside>
+                        </li>
+                        <li class="center">
+                            <form>
+                            <input type="text" value="请输入商品名称、品牌或编号">
+                            </form>
+                        </li>
+                        <li class="right">
+                            <a href="#"><img src="./images/Pingguo.png" alt="" width="30" height="30" title="苹果手机"></a>
+                            <a href="#"><img src="./images/Sanxing.png" alt="" width="30" height="30" title="三星手机"></a>
+                            <a href="#"><img src="./images/Huawei.png" alt="" width="30" height="30" title="华为手机"></a>
+                            <a href="#"><img src="./images/More.png" alt="" width="30" height="30" title="更多手机"></a>
+                        </li>
+                    </ul>
+                </nav>
+                <img src="./images/Beijing.jfif" alt="" width="1000" height="1000">
+               
+                <!-- <audio src="audio/home.ogg" autoplay="ture" loop="ture"></audio> -->
+                <div class="pic">
+                    <img src="./images/Logo.png" alt="">
+                   
+                    <ul>
+                        <li class="one"><span>&#xe662;</span>STANDARD标准</li>
+                        <li class="two"><span>&#xe662;</span>HD高清</li>
+                    </ul>
+                </div>
+            </div>
+</body>
+</html>
