@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆</title>
+
+    <style>
+
+        form{
+            width:300px;
+            height:260px;
+            margin: 50px auto;
+      margin-top: 50px;
+            background-color:#bbffff; 
+            border-radius:20px; 
+            border:3px solid #9999cc;
+        }
+        p
+        {
+            text-align: center;
+        }
+
+.num,.pas{                                   /*对文本框设置共同的宽、高、边框、内边距*/ 
+	width:152px;                                      
+	height:18px;                                 
+	border:1px solid #38a1bf;
+    padding:2px 2px 2px 22px; 
+} 
+
+    .num{                                         /*定义第一个文本框的背景、文本颜色*/
+        
+     background:url(images/Num.png) no-repeat 5px center #FFF;
+     background-size:14px 14px;
+     
+	 color:#999;
+    
+}    
+
+.pas{                                        /*定义第二个文本框的背景*/                                                    
+	 background:url(images/Pas.png) no-repeat 5px center #FFF ;
+     background-size:14px 14px;
+}
+  .dl,.zc{
+
+width: 50px;
+height: 30px;
+margin-left: 10px;
+  }
+
+.dl,.zc
+{
+    font-family:unset;
+
+}
+
+  .dl{background:#66b3ff;}
+  .zc{background-color: #66b3ff;}
+
+  
+  a{
+		text-decoration:none;
+        font-size: 10px;
+}
+    .a1{
+        margin-left: 30px;
+    }
+    .wen{
+        font-size: 5px;
+    }
+    
+    .tu a img{
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div class="d">
+            <form action="#" method="POST">
+                    <p>
+                            <span>账号：</span>
+                            <input type="text" name="username" class="num">
+                    </p>
+            
+                    <P>
+                        <span>密码：</span>
+                        <input type="password" name"pwd" class="pas">
+                    </P>
+                    <P>
+                        <input type="button" class="dl" value="登陆">
+                        <input type="button" class="zc" value="注册">
+                        <a href="#" class="a1">忘记密码</a>
+                    </P>
+                    <p>
+                        <span class="wen">其他登陆方式</span>
+                    </p>
+                    <p class="tu">
+                        <a href="#"><img src="./images/qq.png" alt="" title="qq账号登陆"></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#"><img src="./images/weixin.png" alt="" title="微信账号登陆"></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#"><img src="./images/weibo.png" alt="" title="微博账号登陆"></a>
+                        
+                    </p>
+                               
+                </form>
+    </div>
+   
+</body>
+</html>
