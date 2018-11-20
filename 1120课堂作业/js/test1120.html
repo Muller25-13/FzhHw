@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./shoppingcart.js"></script>
+
+<script>
+var p=new Product("01","鼠标","#","49.5");
+var order=new Order(p,2,true);
+
+var cartData=new CartData();
+cartData.orderList.push(order);
+cartData.totalQty=order.qty;
+cartData.totalAmount=order.qty*order.price;
+cartData.units=1;
+
+console.log(order);
+var cart=new ShoppingCart();
+cart.setDataToLocalStorage(cartData);
+console.log(cart.getDataFromLocalStorage());
+// cart.addToCart(order);
+
+
+
+</script>
+</body>
+</html>
